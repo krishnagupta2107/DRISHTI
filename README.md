@@ -12,6 +12,12 @@ In traditional NLP, sentiment analysis is performed solely on text. However, in 
 - **Fusion Mechanism:** Cross-Attention Gating (Mathematically aligns and fuses image and text vectors)
 - **Interpretability:** Grad-CAM & SHAP (Visualizes *why* the model made a specific prediction)
 
+## Dataset
+This project is currently built upon the **MVSA (Multi-View Sentiment Analysis)** dataset, consisting of approximately 19,600 Image-Text pairs.
+- Each sample contains an image and a corresponding text snippet.
+- The raw sentiment labels (Positive, Negative, Neutral) are mathematically aggregated using a custom majority-vote algorithm across multiple human annotators.
+- Native cross-lingual support is achieved by programmatically extending and augmenting this core dataset across our 7 target languages.
+
 ## Tech Stack
 - **Deep Learning Engine:** PyTorch, Torchvision, Transformers (HuggingFace)
 - **Experiment Tracking:** Weights & Biases (W&B)
