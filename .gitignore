@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Logs and Data
+logs/
+*.log
+checkpoints/
+models/
+/data/
+/datasets/
+/MVSA/
+*.zip
+*.crdownload
+
+# IDEs
+.vscode/
+.idea/
+
+# Experiment Tracking
+wandb/
+mlruns/
+BLUEPRINT.pdf

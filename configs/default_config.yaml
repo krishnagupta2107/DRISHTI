@@ -1,0 +1,18 @@
+project:
+  name: "Drishti-Multimodal-Sentiment"
+  seed: 42
+
+paths:
+  data_dir: "./data"
+  log_dir: "./logs"
+  checkpoint_dir: "./checkpoints"
+
+training:
+  batch_size: 4  # Optimized for 6GB VRAM
+  epochs: 10
+  learning_rate: 2e-5
+  mixed_precision: true # FP16 needed for 6GB VRAM
+
+model:
+  vision_encoder: "resnet50"
+  text_encoder: "xlm-roberta-base"
